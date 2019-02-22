@@ -7,9 +7,9 @@ config(
 function ($routeProvider, $sceDelegateProvider)  {  
 
   $routeProvider.
-  when("/drivers", {templateUrl: "partials/drivers.html", controller: "newsController"}).
-  when("/drivers/:id", {templateUrl: "partials/driver.html", controller: "newsController"}).
-  otherwise({redirectTo: '/drivers'});
+  when("/topStories", {templateUrl: "partials/topStories.html", controller: "newsController"}).
+  when("/topStories/:id", {templateUrl: "partials/story.html", controller: "newsController"}).
+  otherwise({redirectTo: '/topStories'});
 
   $sceDelegateProvider.resourceUrlWhitelist([
       // Allow same origin resource loads.

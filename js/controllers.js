@@ -1,6 +1,6 @@
 angular.module('HackerNews.controllers', []).
 
-/* Drivers controller */
+/* topStories controller */
 controller('newsController', function($scope, hackerNewsAPIservice) {
   $scope.nameFilter = null;
   $scope.storiesIds = [];
@@ -38,15 +38,7 @@ controller('newsController', function($scope, hackerNewsAPIservice) {
     };
 
     $scope.convertUnixTimeToDate = function(unixTime){
-      // Create a new JavaScript Date object based on the timestamp
-      // multiplied by 1000 so that the argument is in milliseconds, not seconds.
       var date = new Date(unixTime*1000);
-      var day = date.getDay();
-      var month = date.getMonth();
-      var year = date.getFullYear();
-
-      var formattedDate = day + "-" + month + "-" + year;
-
-      return formattedDate;
+      return date;
     }
 });
