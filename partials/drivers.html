@@ -1,0 +1,20 @@
+<input type="text" ng-model="nameFilter" placeholder="Search..."/ class="form-control">
+<table class="table table-striped">
+<thead thead-dark>
+  <tr><th colspan="4">Hacker News</th></tr>
+</thead>
+<tbody>
+  <tr ng-repeat="story in stories | filter: searchFilter | orderBy:'score':true">
+    <td>{{$index + 1}}</td>
+    <td>
+      <a href="{{story.url}}">
+      {{story.title}}
+    </a>
+    <br/>
+    Date: {{story.time}}
+    <br/>
+    Score: {{story.score}}
+    </td>
+  </tr>
+</tbody>
+</table>
