@@ -17,8 +17,10 @@
 </thead>
 <tbody>
   <tr ng-repeat="story in stories | filter: searchFilter | orderBy : myOrderBy : IsDesc">
-    <td>{{$index + 1}}</td>
     <td>
+      {{$index + 1}}
+    </td>
+    <td ng-class="{item : selected==$index}" ng-mousemove="setSelected($index)">
       <a href="{{story.url}}">
       {{story.title}}
     </a>

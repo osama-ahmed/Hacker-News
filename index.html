@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Hacker News</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
   <script src="node_modules/angular-route/angular-route.js"></script>
-  <style src="css/app.css"></style>
+  <script src="node_modules/angular-cookies/angular-cookies.js"></script>
+  <link rel="stylesheet" href="css/app.css"></link>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -12,8 +13,6 @@
 
 <body ng-app="HackerNews">
         <ng-view></ng-view>
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="js/app.js"></script>
         <script src="js/services.js"></script>
         <script src="js/controllers.js"></script>

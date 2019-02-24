@@ -2,6 +2,7 @@
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
+    "angular-cookies": "^1.6.9",
     "angular-route": "^1.6.9"
   }
 }
