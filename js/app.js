@@ -3,8 +3,8 @@ angular.module('HackerNews', [
   'HackerNews.services',
   'ngRoute',
   'ngCookies'
-]).
-config(
+])
+.config(
 function ($routeProvider, $sceDelegateProvider)  {  
 
   $routeProvider.

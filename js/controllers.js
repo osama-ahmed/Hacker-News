@@ -1,6 +1,6 @@
 //angular.module('HackerNews.controllers', []);
 
-angular.module('HackerNews.controllers').
+angular.module('HackerNews.controllers', []).
 
 /* topStories controller */
 controller('newsController', function($scope, hackerNewsAPIservice, $window) {
